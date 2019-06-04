@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:startDestination="@id/main_fragment">
+
+    <fragment
+            android:id="@+id/main_fragment"
+            android:name="com.example.myproject.view.MainFragment"
+            android:label="My project">
+        <action
+                android:id="@+id/navigate_to_detail"
+                app:destination="@id/details_fragment"
+                app:enterAnim="@anim/nav_default_enter_anim"
+                app:exitAnim="@anim/nav_default_exit_anim"
+                app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+                app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/details_fragment"
+            android:name="com.example.myproject.view.DetailFragment"
+            android:label="Details" />
+
+</navigation>
